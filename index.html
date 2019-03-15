@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <title>キモチの切り替えカタログ</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,500,700,800,900&amp;subset=japanese" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/bootstrap-modal-style.css">
+
 
 </head>
 
@@ -13,16 +20,21 @@
     <section class="infiniteslide">
 
         <div class="grid grid-type-1">
-            <div class="tile tile-wrapper-s tile-blue">
-                <div>
-                    <p>1</p>
+            <a href="#" data-toggle="modal" data-target="#exampleModal">
+                <div class="tile tile-wrapper-s tile-blue">
+                    <div>
+                        <p>1</p>
+                    </div>
                 </div>
-            </div>
-            <div class="tile tile-wrapper-s tile-green">
-                <div>
-                    <p>2</p>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#fitness">
+                <div class="tile tile-wrapper-s tile-green">
+                    <div>
+                        <img src="./img/fitness.svg" width="100%" alt="">
+                        <!--                        <p>2</p>-->
+                    </div>
                 </div>
-            </div>
+            </a>
             <div class="tile tile-wrapper-l tile-gray">
                 <div>
                     <p>3</p>
@@ -250,9 +262,95 @@
     </section>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Method 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="method-img">
+                        <div class="fa fa-music"></div>
+                    </div>
+
+                    <div class="method-txt">
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!--
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Fitness -->
+    <div class="modal fade" id="fitness" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        ストレッチをする
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="method-img">
+                        <img src="./img/fitness-test.svg" alt="" width="100%">
+                    </div>
+
+                    <div class="method-txt">
+                        <br><br>
+                        のびをしたり、首を回したり簡単なストレッチをしてみましょう。<br><br>
+                        首回りの血行が促進されて脳にしっかり栄養が運ばれ、気分も、そして疲れ目も、すっきりクリアになるでしょう。
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--loading javascripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!--
     <script src="js/infiniteslidev2.js"></script>
 <script src="js/infiniteslidev2-settings.js"> </script>
 -->
-</body> </html>
+    <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

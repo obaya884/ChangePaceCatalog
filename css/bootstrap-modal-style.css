@@ -1,0 +1,44 @@
+.modal-header {
+    position: relative;
+}
+
+.modal-header .modal-title {
+    margin: 0 auto;
+
+}
+
+.modal-header button {
+    box-sizing: border-box;
+    position: absolute;
+    right: 2%;
+}
+
+.modal-header .modal-title {
+    font-size: 2em;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.method-img {
+    /*    background: #6ABB81;*/
+    /*    font-size: 10rem;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+
+.method-txt {
+    height: 80%;
+    width: 50%;
+    font-size: 1.3em;
+
+}
