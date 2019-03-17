@@ -7,19 +7,13 @@
 
 @mixin tile-wrapper {
     box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 4vw;
     margin-bottom: 0.5vw;
     margin-right: 0.5vw;
-    border: 5px solid #333;
+    border: 0.4vw solid #333;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .fas {
-        font-size: 10%;
-        color: #fff;
-    }
-
 }
 
 @mixin grid {
@@ -32,9 +26,49 @@
     margin: 0 2vw;
 }
 
-body {
-    background: #e9e9d1;
+body .infiniteslide {
+    background-color: #e9e9d1;
 
+}
+
+header {
+    //    margin-bottom: 3vh;
+    text-align: center;
+    color: #333;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9e9d1;
+    //    border-bottom: 0.5vh solid #333;
+
+    h1 {
+        font-size: 3rem;
+        padding-top: 2vh;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+        a {
+            color: #333;
+            text-decoration: none;
+
+            :hover {
+                color: #697268;
+            }
+
+        }
+
+
+    }
+}
+
+
+.infiniteslide {
+    padding-top: 2vh;
 }
 
 .grid {
@@ -51,12 +85,32 @@ body {
     @include tile-wrapper;
     height: 18vw;
     width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fas,
+    .fab {
+        color: #fff;
+        font-size: 11vw;
+    }
+
 }
 
 .tile-wrapper-l {
     @include tile-wrapper;
+
     height: 36.5vw;
     width: 36.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fas,
+    .fab {
+        color: #fff;
+        font-size: 18vw;
+    }
 
 }
 
@@ -106,12 +160,6 @@ body {
     .tile:nth-child(n+4) {
         margin-right: 0;
     }
-}
-
-
-p {
-    color: #fff;
-    font-size: 10vw;
 }
 
 .tile-green {

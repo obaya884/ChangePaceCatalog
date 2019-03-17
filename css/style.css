@@ -4,11 +4,41 @@
   padding: 0;
   font-family: 'M PLUS Rounded 1c', sans-serif; }
 
-/* line 35, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
-body {
-  background: #e9e9d1; }
+/* line 29, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+body .infiniteslide {
+  background-color: #e9e9d1; }
 
-/* line 40, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 34, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+header {
+  text-align: center;
+  color: #333;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9e9d1; }
+  /* line 45, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+  header h1 {
+    font-size: 3rem;
+    padding-top: 2vh; }
+  /* line 50, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+  header .info {
+    display: flex;
+    justify-content: center;
+    align-items: baseline; }
+    /* line 55, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+    header .info a {
+      color: #333;
+      text-decoration: none; }
+      /* line 59, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+      header .info a :hover {
+        color: #697268; }
+
+/* line 70, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+.infiniteslide {
+  padding-top: 2vh; }
+
+/* line 74, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid {
   display: flex;
   flex-flow: column wrap;
@@ -19,7 +49,7 @@ body {
   margin: 0 2vw;
   height: 37vw; }
 
-/* line 45, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 79, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-short {
   display: flex;
   flex-flow: column wrap;
@@ -30,86 +60,89 @@ body {
   margin: 0 2vw;
   height: 18.5vw; }
 
-/* line 50, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 84, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .tile-wrapper-s {
   box-sizing: border-box;
-  border-radius: 50px;
+  border-radius: 4vw;
   margin-bottom: 0.5vw;
   margin-right: 0.5vw;
-  border: 5px solid #333;
+  border: 0.4vw solid #333;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 18vw;
-  width: 18vw; }
-  /* line 18, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
-  .tile-wrapper-s .fas {
-    font-size: 10%;
-    color: #fff; }
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  /* line 92, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+  .tile-wrapper-s .fas,
+  .tile-wrapper-s .fab {
+    color: #fff;
+    font-size: 11vw; }
 
-/* line 56, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 100, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .tile-wrapper-l {
   box-sizing: border-box;
-  border-radius: 50px;
+  border-radius: 4vw;
   margin-bottom: 0.5vw;
   margin-right: 0.5vw;
-  border: 5px solid #333;
+  border: 0.4vw solid #333;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 36.5vw;
-  width: 36.5vw; }
-  /* line 18, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
-  .tile-wrapper-l .fas {
-    font-size: 10%;
-    color: #fff; }
+  width: 36.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  /* line 109, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+  .tile-wrapper-l .fas,
+  .tile-wrapper-l .fab {
+    color: #fff;
+    font-size: 18vw; }
 
-/* line 64, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 118, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-1 .tile:nth-child(n+7) {
   margin-right: 0; }
 
-/* line 70, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 124, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-2 .tile:nth-child(n+4) {
   margin-right: 0; }
 
-/* line 76, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 130, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-3 .tile:nth-child(n+7) {
   margin-right: 0; }
 
-/* line 82, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 136, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-4 .tile:nth-child(n+4) {
   margin-right: 0; }
 
-/* line 88, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 142, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-5 .tile:nth-child(n+5) {
   margin-right: 0; }
 
-/* line 94, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 148, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-6 .tile:nth-child(n+4) {
   margin-right: 0; }
 
-/* line 100, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 154, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-7 .tile:nth-child(n+6) {
   margin-right: 0; }
 
-/* line 106, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 160, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .grid-type-8 .tile:nth-child(n+4) {
   margin-right: 0; }
 
-/* line 112, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
-p {
-  color: #fff;
-  font-size: 10vw; }
-
-/* line 117, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 165, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .tile-green {
   background: #67bc7f; }
 
-/* line 121, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 169, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .tile-blue {
   background: #40789c; }
 
-/* line 125, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
+/* line 173, /Users/obayashitakumi/myproducts/l4s-original-product/css/style.scss */
 .tile-gray {
   background: #697268; }
 

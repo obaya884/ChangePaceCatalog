@@ -1,6 +1,7 @@
 $(function () {
     $('.infiniteslide').infiniteslide({
         direction: 'up',
-        pauseonhover: 'false'
+        pauseonhover: 'false',
+        speed: 50
     });
 });
