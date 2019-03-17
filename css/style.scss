@@ -24,6 +24,7 @@
     align-content: center;
     background: #e9e9d1;
     margin: 0 2vw;
+
 }
 
 body .infiniteslide {
@@ -39,7 +40,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e9e9d1;
+    background: #96bdc6;
     //    border-bottom: 0.5vh solid #333;
 
     h1 {
@@ -66,11 +67,6 @@ header {
     }
 }
 
-
-.infiniteslide {
-    padding-top: 2vh;
-}
-
 .grid {
     @include grid;
     height: 37vw;
@@ -93,6 +89,14 @@ header {
     .fab {
         color: #fff;
         font-size: 11vw;
+        text-decoration: none;
+        z-index: 1;
+    }
+
+    text-decoration: none;
+
+    div {
+        text-decoration: none;
     }
 
 }
@@ -163,13 +167,24 @@ header {
 }
 
 .tile-green {
-    background: #67bc7f;
+    background: #5fad56;
 }
 
 .tile-blue {
-    background: #40789c;
+    background: #a5c323;
 }
 
 .tile-gray {
-    background: #697268;
+    background: #bfae48;
+}
+
+footer {
+    background: #96bdc6;
+    color: #333;
+    text-align: center;
+    padding: 0.3rem 0;
+
+    p {
+        display: inline;
+    }
 }
